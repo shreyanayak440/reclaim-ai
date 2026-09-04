@@ -1,116 +1,96 @@
-\# RECLAIM — Payment Failure Revenue Recovery Agent
+# RECLAIM — AI-Powered Payment Failure Revenue Recovery
 
+> **Turn failed payments into recoverable revenue through intelligent, policy-aware decisions.**
 
+---
 
-\## Problem
+## Overview
 
+**Reclaim** is an AI-driven revenue recovery decision system designed to determine the **best next action after a payment failure**.
 
+Instead of applying the same retry rule to every failed payment, Reclaim evaluates each payment individually, estimates its recovery probability, evaluates possible interventions, and selects the action with the highest expected recovery value.
 
-Failed payments create direct revenue leakage for merchants. Traditional
+The system combines:
 
-recovery systems often rely on fixed retry rules and do not optimize the
+- **Recovery prediction**
+- **Revenue optimization**
+- **Action selection**
+- **Policy guardrails**
+- **Human approval**
+- **Auditability**
+- **Outcome-based learning**
 
-next action for each individual payment.
+The goal is simple:
 
+> **Don't just predict whether a failed payment can recover. Decide what to do next to recover the most revenue.**
 
+---
 
-\## Solution
+# The Problem
 
+Failed payments create significant potential revenue leakage for merchants.
 
+Traditional payment recovery systems often depend on:
 
-Reclaim is an AI-driven revenue recovery decision system that evaluates failed
+- Fixed retry schedules
+- Generic recovery rules
+- One-size-fits-all interventions
+- Limited decision intelligence
+- Minimal human oversight
 
-payments, estimates recovery probability, compares possible interventions,
+The result is that merchants may spend recovery effort on low-value or low-probability payments while missing higher-value opportunities.
 
-and selects the action with the highest expected recovery value while
+### The key question
 
-respecting policy constraints and human-approval requirements.
+A failed payment does not simply require a prediction.
 
+It requires a **decision**:
 
+> **Should we retry, send a reminder, or take no action?**
 
-\## Core Workflow
+And that decision should consider both:
 
+**Probability of recovery + Economic value of recovery**
 
+---
 
+# Our Solution
+
+**Reclaim** transforms payment recovery from a static retry workflow into an **AI-powered revenue decision system**.
+
+For every failed payment, the system:
+
+1. Ingests payment information
+2. Evaluates the payment's recovery characteristics
+3. Estimates recovery probability
+4. Evaluates available recovery actions
+5. Calculates expected recovery value
+6. Applies policy constraints
+7. Determines whether human approval is required
+8. Produces a recommended action
+9. Records the decision in an audit trail
+
+---
+
+# Core Decision Loop
+
+```text
 Failed Payment
-
-&#x20;     ↓
-
+      ↓
 Recovery Prediction
-
-&#x20;     ↓
-
+      ↓
 Action Evaluation
-
-&#x20;     ↓
-
+      ↓
+Expected Revenue Calculation
+      ↓
 Revenue Optimization
-
-&#x20;     ↓
-
+      ↓
 Policy / Human Approval
-
-&#x20;     ↓
-
+      ↓
+Recommended Action
+      ↓
 Execution
-
-&#x20;     ↓
-
+      ↓
 Outcome + Audit Trail
-
-&#x20;     ↓
-
+      ↓
 Learning Signal
-
-
-
-\## Actions
-
-
-
-\- Retry
-
-\- Reminder
-
-\- No Action
-
-
-
-\## Dashboard
-
-
-
-The dashboard provides:
-
-
-
-\- Payments analyzed
-
-\- Revenue at risk
-
-\- Expected recovery
-
-\- Net expected recovery
-
-\- Recovery rate
-
-\- Human approval queue
-
-\- AI action allocation
-
-\- Latest agent decision
-
-
-
-\## Demo
-
-
-
-1\. Start the backend:
-
-
-
-```powershell
-
-python backend\\app.py
-
