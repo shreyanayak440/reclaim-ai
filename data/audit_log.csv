@@ -1,0 +1,10 @@
+timestamp,customer_id,amount,failure_reason,recommended_action,recovery_probability,expected_revenue,approval_required,decision_status,execution_status,outcome,actual_revenue,decision_reason,learning_signal
+2026-09-03 23:57:47,C13982,5000,Temporary Failure,Retry,0.9237130178102435,4618.565089051218,False,APPROVED,EXECUTED,Recovered,5000,Highest expected recovery within policy constraints.,POSITIVE
+2026-09-04 00:12:09,C13982,5000,Temporary Failure,Retry,0.9237130178102435,4618.565089051218,False,APPROVED,EXECUTED,Recovered,5000,Highest expected recovery within policy constraints.,POSITIVE
+2026-09-04 00:20:45,C13982,5000,Temporary Failure,Retry,0.9237130178102435,4618.565089051218,False,APPROVED,EXECUTED,Recovered,5000,Highest expected recovery within policy constraints.,POSITIVE
+2026-09-04 00:37:19,C13982,5000,Temporary Failure,Retry,0.9237130178102435,4618.565089051218,False,APPROVED,EXECUTED,Recovered,5000,Highest expected recovery within policy constraints.,POSITIVE
+2026-09-04 00:46:40,C13982,5000,Temporary Failure,Retry,0.9237130178102435,4618.565089051218,False,APPROVED,EXECUTED,Recovered,5000,Highest expected recovery within policy constraints.,POSITIVE
+2026-09-04 22:44:22,C13982,49796.25,Retry,0.9371243842624324,46665.28011982815,True,PENDING_APPROVAL,NOT_EXECUTED,Pending
+2026-09-04 23:11:11,C13982,49796.25,Retry,0.9371243842624324,46665.28011982815,True,PENDING_APPROVAL,NOT_EXECUTED,Pending
+2026-09-04 23:29:43,C13982,49796.25,Retry,0.9371243842624324,46665.28011982815,True,PENDING_APPROVAL,NOT_EXECUTED,Pending
+2026-09-05 00:25:29,C13982,49796.25,Retry,0.9371243842624324,46665.28011982815,True,PENDING_APPROVAL,NOT_EXECUTED,Pending

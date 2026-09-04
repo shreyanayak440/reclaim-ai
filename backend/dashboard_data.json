@@ -1,0 +1,13 @@
+{
+  "payments_analyzed": 5000,
+  "revenue_at_risk": 27522461.13,
+  "expected_recovery": 15734046.11,
+  "net_expected_recovery": 13962226.29,
+  "recovery_rate": 57.17,
+  "human_approvals": 48,
+  "action_allocation": {
+    "No Action": 575,
+    "Reminder": 2459,
+    "Retry": 1966
+  }
+}
